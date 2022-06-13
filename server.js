@@ -6,11 +6,11 @@ const Jugadores = require("./schemas/JugadorSchema");
 
 
 
-//mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
-mongoose.connect(
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
+/*mongoose.connect(
   "mongodb+srv://alezeker:Tplinkmongo@cluster0.lghqdji.mongodb.net/?retryWrites=true&w=majority",
   { useNewUrlParser: true }
-);
+);*/
 
 
 /*async function run() {
