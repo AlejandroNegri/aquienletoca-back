@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
+    "devStart": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -20,9 +21,12 @@
   "homepage": "https://github.com/AlejandroNegri/aquienletoca-back#readme",
   "dependencies": {
     "express": "^4.17.2",
-    "mongoose": "^6.3.5"
+    "mongoose": "^6.3.6"
   },
   "engines": {
     "node": "14.15.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
   }
 }

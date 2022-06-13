@@ -15,10 +15,10 @@ function Main() {
     },
     {
       title: "Jugados desde última lavada",
-      dataIndex: "pjsl",
-      key: "pjsl",
+      dataIndex: "acumulado",
+      key: "acumulado",
       defaultSortOrder: "descend",
-      sorter: (a, b) => a.pjsl - b.pjsl,
+      sorter: (a, b) => a.acumulado - b.acumulado,
       sortDirections: ["ascend", "descend", "ascend"],
     },
   ];
@@ -48,7 +48,7 @@ function Main() {
   const db = getDatabase();
   set(ref(db, '/jugadores/BRzjNjVz285JsO2kYCFE'), {
     nombre: "pepito",
-    pjsl: 5,
+    acumulado: 5,
   });*/
   }
 
