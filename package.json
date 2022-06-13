@@ -5,7 +5,6 @@
   "main": "app.js",
   "scripts": {
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "repository": {
@@ -19,6 +18,7 @@
   },
   "homepage": "https://github.com/AlejandroNegri/aquienletoca-back#readme",
   "dependencies": {
+    "body-parser": "^1.20.0",
     "dotenv": "^16.0.1",
     "express": "^4.17.2",
     "mongoose": "^6.3.6"
